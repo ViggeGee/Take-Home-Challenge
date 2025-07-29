@@ -1,23 +1,22 @@
+require('dotenv').config();
 const { Pool } = require('pg');
 
-// Database configuration
+// Database configuration using environment variables
 const pool = new Pool({
-  user: 'postgres',          
-  host: 'localhost',         
-  database: 'model_monitor', 
-  password: 'Bollen123', 
-  port: 5432,               
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 
 // Test database connection
 pool.on('connect', () => {
-  console.log('Connected to the database');
+  console.log('Connected to PostgreSQL database');
 });
 
 pool.on('error', (err) => {
-  console.error('error:', err);
+  console.error('Database error:', err);
 });
 
 module.exports = pool;
-
-//env fil

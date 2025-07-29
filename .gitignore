@@ -8,7 +8,7 @@ yarn-error.log*
 /frontend/build/
 /backend/dist/
 
-# Environment variables
+# Environment variables (IMPORTANT - keeps secrets safe!)
 .env
 .env.local
 .env.development.local

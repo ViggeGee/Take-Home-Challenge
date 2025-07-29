@@ -36,7 +36,7 @@ ratings (id, response_id, rating, created_at)
 
 ### 1. Clone the repository
 ```bash
-git clone <https://github.com/ViggeGee/Take-Home-Challenge.git>
+git clone <your-repo-url>
 cd model-monitor
 ```
 
@@ -54,6 +54,11 @@ node config/init-db.js
 ```bash
 cd backend
 npm install
+
+# Setup environment variables
+cp .env.example .env
+# Edit .env and add your PostgreSQL password and JWT secret
+
 npm run dev
 ```
 Server will run on http://localhost:5000

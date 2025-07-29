@@ -5,8 +5,8 @@ const pool = require('../config/database');
 
 const router = express.Router();
 
-// Secret key for JWT (in real app, use environment variable)
-const JWT_SECRET = 'secret-key';
+// Get JWT secret from environment variables
+const JWT_SECRET = process.env.JWT_SECRET;
 
 // POST /api/auth/login
 router.post('/login', async (req, res) => {
