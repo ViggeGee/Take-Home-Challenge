@@ -1,13 +1,4 @@
 require('dotenv').config();
-
-// Test environment variables
-console.log('=== Environment Check ===');
-console.log('DB_USER:', process.env.DB_USER);
-console.log('DB_NAME:', process.env.DB_NAME);
-console.log('DB_PASSWORD length:', process.env.DB_PASSWORD ? process.env.DB_PASSWORD.length : 'undefined');
-console.log('JWT_SECRET length:', process.env.JWT_SECRET ? process.env.JWT_SECRET.length : 'undefined');
-console.log('========================');
-
 const express = require('express');
 const cors = require('cors');
 
