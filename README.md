@@ -14,7 +14,7 @@ A full-stack web application for monitoring brand mentions in AI-generated respo
 ## Tech Stack
 
 - **Frontend**: React 18, React Router, Axios, CSS3
-- **Backend**: Node.js, Express.js, JWT, bcrypt
+- **Backend**: Node.js, Express.js, JWT, bcrypt, dotenv
 - **Database**: PostgreSQL with proper relational design
 - **Other**: Faker.js for mock data generation
 
@@ -36,7 +36,7 @@ ratings (id, response_id, rating, created_at)
 
 ### 1. Clone the repository
 ```bash
-git clone <https://github.com/ViggeGee/Take-Home-Challenge.git>
+git clone https://github.com/ViggeGee/Take-Home-Challenge.git
 cd model-monitor
 ```
 
