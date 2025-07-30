@@ -124,7 +124,8 @@ model-monitor/
 
 ### Bonus Features
 - ✅ bcrypt password hashing
-- ✅ Protected API endpoints and routes
+- ✅ Protected API endpoints and routes  
+- ✅ Environment variables for security (dotenv)
 
 ### Potential Additions
 - TypeScript for better type safety
