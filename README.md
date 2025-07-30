@@ -120,28 +120,9 @@ model-monitor/
 └── README.md
 ```
 
-## Design Decisions
+## Enhancements
 
-### Security
-- **JWT Authentication**: Stateless, scalable authentication
-- **bcrypt Password Hashing**: Industry-standard password security
-- **Protected Routes**: Both API endpoints and frontend routes are protected
-- **User Data Isolation**: SQL queries ensure users only access their own data
-
-### User Experience
-- **Responsive Design**: Works on desktop and mobile
-- **Loading States**: Clear feedback during async operations
-- **Error Handling**: User-friendly error messages
-- **Modal Forms**: Clean, focused editing experience
-
-### Database Design
-- **Normalized Schema**: Proper relationships between entities
-- **Cascading Deletes**: Clean up orphaned records automatically
-- **Indexed Foreign Keys**: Optimized query performance
-
-## Future Enhancements
-
-### Implemented Bonus Features
+### Bonus Features
 - ✅ bcrypt password hashing
 - ✅ Protected API endpoints and routes
 
